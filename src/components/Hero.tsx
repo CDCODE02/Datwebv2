@@ -32,7 +32,7 @@ export default function Hero() {
           </h2>
           <h1 className="text-xl sm:text-4xl md:text-7xl lg:text-8xl font-display leading-none mb-6 text-black drop-shadow-[0_2px_0_rgba(255,255,255,1)] md:drop-shadow-[0_4px_0_rgba(255,255,255,1)] w-full max-w-full">
             <span className="whitespace-nowrap">INTRODUCING</span> <br />
-            <span className="text-white drop-shadow-[0_2px_0_rgba(0,0,0,1)] md:drop-shadow-[0_4px_0_rgba(0,0,0,1)]">
+            <span className="text-neon-green drop-shadow-[0_2px_0_rgba(0,0,0,1)] md:drop-shadow-[0_4px_0_rgba(0,0,0,1)]">
               $DATBOI
             </span>
           </h1>
