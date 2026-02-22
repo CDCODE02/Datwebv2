@@ -73,7 +73,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative mt-8 lg:mt-0"
         >
-          <div className="relative w-4/5 md:w-full aspect-square max-w-lg mx-auto">
+          <div className="relative w-full aspect-square max-w-lg mx-auto">
             {/* Placeholder for Dat Boi Image */}
             <div className="w-full h-full bg-white rounded-3xl border-4 border-black flex items-center justify-center overflow-hidden relative group shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] md:shadow-[20px_20px_0px_0px_rgba(0,0,0,1)]">
                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-neon-green/40 via-transparent to-transparent opacity-50"></div>
