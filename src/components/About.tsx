@@ -21,7 +21,7 @@ export default function About() {
             <div className="relative">
                <div className="aspect-[4/5] bg-gray-100 rounded-2xl border-4 border-black p-8 flex items-center justify-center shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] overflow-hidden">
                   <img 
-                    src="https://i.ibb.co/SwcBcQ8d/PNG-01.png" 
+                    src="https://i.ibb.co/JFnydgYX/Whats-App-Image-2026-02-22-at-1-13-35-PM-1.jpg" 
                     alt="Dat Boi" 
                     className="w-full h-full object-contain animate-custom-bounce"
                   />
