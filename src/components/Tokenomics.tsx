@@ -39,14 +39,14 @@ export default function Tokenomics() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-black border-4 border-white p-8 rounded-2xl shadow-[10px_10px_0px_0px_rgba(255,255,255,1)] hover:translate-y-1 hover:shadow-[5px_5px_0px_0px_rgba(255,255,255,1)] transition-all group"
+              className="bg-white border-4 border-black p-8 rounded-2xl shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] hover:translate-y-1 hover:shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] transition-all group"
             >
-              <div className="mb-6 bg-white/10 w-20 h-20 rounded-full flex items-center justify-center border border-white/10 group-hover:scale-110 transition-transform">
+              <div className="mb-6 bg-gray-100 w-20 h-20 rounded-full flex items-center justify-center border border-black/10 group-hover:scale-110 transition-transform">
                 {item.icon}
               </div>
               <h3 className="text-neon-green font-mono text-sm mb-2 font-bold">{item.title}</h3>
-              <p className="text-4xl font-display text-white mb-4">{item.value}</p>
-              <p className="text-gray-300 text-sm font-mono">{item.desc}</p>
+              <p className="text-4xl font-display text-black mb-4">{item.value}</p>
+              <p className="text-gray-600 text-sm font-mono font-bold">{item.desc}</p>
             </motion.div>
           ))}
         </div>

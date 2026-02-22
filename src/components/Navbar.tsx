@@ -14,14 +14,14 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-dark-bg/90 backdrop-blur-md border-b border-neon-green/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-neon-green/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0 flex items-center gap-2">
             <div className="w-10 h-10 bg-neon-green rounded-full flex items-center justify-center text-black font-bold text-xl">
               🐸
             </div>
-            <span className="font-display text-3xl text-white tracking-wider">
+            <span className="font-display text-3xl text-black tracking-wider">
               $DATBOI
             </span>
           </div>
@@ -32,7 +32,7 @@ export default function Navbar() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="font-mono text-sm hover:text-neon-green transition-colors duration-200"
+                  className="font-mono text-sm text-black hover:text-neon-green transition-colors duration-200"
                 >
                   {item.name}
                 </a>
@@ -54,7 +54,7 @@ export default function Navbar() {
           <div className="-mr-2 flex md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-neon-green hover:text-white focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-neon-green focus:outline-none"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -68,7 +68,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-dark-bg border-b border-neon-green/20"
+            className="md:hidden bg-white border-b border-neon-green/20"
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navItems.map((item) => (
@@ -76,7 +76,7 @@ export default function Navbar() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-gray-300 hover:text-neon-green block px-3 py-2 rounded-md text-base font-medium font-mono"
+                  className="text-gray-700 hover:text-neon-green block px-3 py-2 rounded-md text-base font-medium font-mono"
                 >
                   {item.name}
                 </a>

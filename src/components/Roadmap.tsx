@@ -20,9 +20,9 @@ export default function Roadmap() {
   ];
 
   return (
-    <section id="roadmap" className="py-24 bg-black text-white">
+    <section id="roadmap" className="py-24 bg-white text-black">
       <div className="container mx-auto px-4">
-        <h2 className="text-5xl md:text-7xl font-display text-white text-center mb-20">
+        <h2 className="text-5xl md:text-7xl font-display text-black text-center mb-20">
           DAT<span className="text-neon-green">MAP</span>
         </h2>
 
@@ -36,17 +36,17 @@ export default function Roadmap() {
               transition={{ delay: index * 0.2 }}
               className="relative"
             >
-              <div className="bg-white/5 border border-white/10 p-8 rounded-2xl h-full hover:border-neon-green transition-colors">
-                <div className="text-6xl font-display text-white/5 absolute top-4 right-4">
+              <div className="bg-gray-50 border-4 border-black p-8 rounded-2xl h-full hover:border-neon-green transition-colors shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+                <div className="text-6xl font-display text-black/5 absolute top-4 right-4">
                   {phase.id}
                 </div>
                 <h3 className="text-2xl font-display text-neon-green mb-6">
                   PHASE {phase.id}: <br />
-                  <span className="text-white">{phase.title}</span>
+                  <span className="text-black">{phase.title}</span>
                 </h3>
                 <ul className="space-y-4">
                   {phase.items.map((item, i) => (
-                    <li key={i} className="flex items-center text-gray-300 font-mono">
+                    <li key={i} className="flex items-center text-gray-700 font-mono font-bold">
                       <span className="w-2 h-2 bg-neon-green rounded-full mr-3" />
                       {item}
                     </li>

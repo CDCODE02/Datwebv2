@@ -51,15 +51,15 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="bg-black/90 backdrop-blur-sm border border-white/20 p-4 rounded-xl max-w-md mx-auto lg:mx-0 shadow-2xl">
+          <div className="bg-white/90 backdrop-blur-sm border border-black/10 p-4 rounded-xl max-w-md mx-auto lg:mx-0 shadow-2xl">
             <div className="flex items-center justify-between gap-4">
               <span className="font-mono text-neon-green text-sm">CA:</span>
-              <code className="font-mono text-white text-sm truncate flex-1">
+              <code className="font-mono text-black text-sm truncate flex-1">
                 {ca}
               </code>
               <button
                 onClick={copyToClipboard}
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-400 hover:text-black transition-colors"
               >
                 {copied ? <Check size={18} className="text-neon-green" /> : <Copy size={18} />}
               </button>
@@ -75,7 +75,7 @@ export default function Hero() {
         >
           <div className="relative w-full aspect-square max-w-lg mx-auto">
             {/* Placeholder for Dat Boi Image */}
-            <div className="w-full h-full bg-black rounded-3xl border-4 border-black flex items-center justify-center overflow-hidden relative group shadow-[20px_20px_0px_0px_rgba(0,0,0,1)]">
+            <div className="w-full h-full bg-white rounded-3xl border-4 border-black flex items-center justify-center overflow-hidden relative group shadow-[20px_20px_0px_0px_rgba(0,0,0,1)]">
                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-neon-green/40 via-transparent to-transparent opacity-50"></div>
                <span className="text-9xl group-hover:scale-110 transition-transform duration-500 animate-custom-bounce">🐸🚲</span>
             </div>
