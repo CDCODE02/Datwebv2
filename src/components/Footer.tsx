@@ -5,8 +5,8 @@ export default function Footer() {
     <footer id="social" className="bg-white py-16 border-t border-black/10">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center text-center">
-          <div className="w-16 h-16 bg-neon-green rounded-full flex items-center justify-center text-3xl mb-6 border-2 border-black">
-            🐸
+          <div className="w-16 h-16 bg-neon-green rounded-full flex items-center justify-center mb-6 border-2 border-black overflow-hidden">
+            <img src="https://i.ibb.co/SwcBcQ8d/PNG-01.png" alt="Dat Boi Logo" className="w-full h-full object-cover" />
           </div>
           
           <h2 className="text-3xl font-display text-black mb-8">

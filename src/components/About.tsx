@@ -29,7 +29,7 @@ export default function About() {
                <div className="absolute -bottom-6 -right-6 w-full h-full border-2 border-neon-green rounded-2xl -z-10" />
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-6 text-center md:text-left">
               <p className="text-xl md:text-2xl font-mono leading-relaxed text-gray-800">
                 <span className="text-neon-green font-bold">"here come dat boi! o shit waddup!"</span>
               </p>

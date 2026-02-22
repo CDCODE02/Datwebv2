@@ -27,31 +27,31 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-center lg:text-left"
         >
-          <h2 className="text-xl md:text-2xl font-mono text-black font-bold mb-4 tracking-widest">
+          <h2 className="text-lg md:text-2xl font-mono text-black font-bold mb-4 tracking-widest">
             O SHIT WADDUP!
           </h2>
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-display leading-none mb-6 text-white drop-shadow-[0_4px_0_rgba(0,0,0,1)]">
+          <h1 className="text-4xl sm:text-5xl md:text-8xl lg:text-9xl font-display leading-none mb-6 text-white drop-shadow-[0_4px_0_rgba(0,0,0,1)] break-words">
             INTRODUCING <br />
             <span className="text-black drop-shadow-none">
               $DATBOI
             </span>
           </h1>
           
-          <p className="text-black/80 text-lg md:text-xl max-w-lg mx-auto lg:mx-0 mb-8 font-mono font-bold">
+          <p className="text-black/80 text-lg md:text-xl max-w-lg mx-auto lg:mx-0 mb-8 font-mono font-bold px-4">
             The internet never forgets legends. It just waits for them to return.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-8">
-            <button className="group bg-black text-white font-display text-xl px-8 py-4 rounded-full hover:bg-white hover:text-black transition-all shadow-xl flex items-center gap-3">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-8 w-full">
+            <button className="group bg-black text-white font-display text-xl px-8 py-4 rounded-full hover:bg-white hover:text-black transition-all shadow-xl flex items-center gap-3 w-full sm:w-auto justify-center">
               BUY $DATBOI
               <ShoppingCart className="w-6 h-6 transition-colors" />
             </button>
-            <a href="https://dexscreener.com" target="_blank" rel="noreferrer" className="border-2 border-black text-black font-mono font-bold px-8 py-4 rounded-full hover:bg-black hover:text-white transition-all">
+            <a href="https://dexscreener.com" target="_blank" rel="noreferrer" className="border-2 border-black text-black font-mono font-bold px-8 py-4 rounded-full hover:bg-black hover:text-white transition-all w-full sm:w-auto text-center">
               VIEW CHART
             </a>
           </div>
 
-          <div className="bg-white/90 backdrop-blur-sm border border-black/10 p-4 rounded-xl max-w-md mx-auto lg:mx-0 shadow-2xl">
+          <div className="bg-white/90 backdrop-blur-sm border border-black/10 p-4 rounded-xl max-w-md mx-auto lg:mx-0 shadow-2xl w-full">
             <div className="flex items-center justify-between gap-4">
               <span className="font-mono text-neon-green text-sm">CA:</span>
               <code className="font-mono text-black text-sm truncate flex-1">
@@ -88,7 +88,7 @@ export default function Hero() {
             <motion.div 
               animate={{ y: [0, -20, 0] }}
               transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-              className="absolute -top-10 -right-10 bg-white text-black font-display text-xl p-4 rounded-lg rotate-12 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] border-2 border-black"
+              className="absolute -top-10 left-1/2 -translate-x-1/2 md:translate-x-0 md:left-auto md:-right-10 bg-white text-black font-display text-lg md:text-xl p-4 rounded-lg rotate-12 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] border-2 border-black z-20 whitespace-nowrap"
             >
               HERE COME DAT BOI!
             </motion.div>
