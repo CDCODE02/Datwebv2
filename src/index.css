@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Anton", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-sans: "Inter", sans-serif;
+
+  --color-neon-green: #00FF00;
+  --color-neon-pink: #FF00FF;
+  --color-dark-bg: #0a0a0a;
+  --color-card-bg: #111111;
+}
+
+@layer base {
+  body {
+    @apply bg-dark-bg text-white font-sans overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display uppercase tracking-wide;
+  }
+}
+
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke: 1px black;
+  }
+  .text-stroke-white {
+    -webkit-text-stroke: 1px white;
+  }
+  
+  .glow-text {
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  }
+  
+  .glow-box {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+  }
+}
