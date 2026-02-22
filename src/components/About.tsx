@@ -20,10 +20,13 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative">
                <div className="aspect-[4/5] bg-gray-100 rounded-2xl border-4 border-black p-8 flex items-center justify-center shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] overflow-hidden">
-                  <img 
+                  <motion.img 
                     src="https://i.ibb.co/JFnydgYX/Whats-App-Image-2026-02-22-at-1-13-35-PM-1.jpg" 
                     alt="Dat Boi" 
-                    className="w-full h-full object-contain animate-custom-bounce"
+                    className="w-full h-full object-contain"
+                    initial={{ x: '100%', opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{ type: "spring", stiffness: 50, damping: 15, delay: 0.2 }}
                   />
                </div>
                <div className="absolute -bottom-6 -right-6 w-full h-full border-2 border-neon-green rounded-2xl -z-10" />
