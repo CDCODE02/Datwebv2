@@ -28,9 +28,6 @@ export default function Footer() {
           <p className="text-gray-600 font-mono text-sm font-bold">
             Copyright $DATBOI © 2026. All rights reserved.
           </p>
-          <p className="text-gray-500 font-mono text-xs mt-2 max-w-md">
-            $DATBOI is a memecoin with no intrinsic value or expectation of financial return. There is no formal team or roadmap. The coin is completely useless and for entertainment purposes only.
-          </p>
         </div>
       </div>
     </footer>
