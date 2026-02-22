@@ -13,6 +13,32 @@ export default function Navbar() {
     { name: 'SOCIALS', href: '#social' },
   ];
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setIsOpen(false);
+    
+    setTimeout(() => {
+      if (href === '#') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+
+      const targetId = href.replace('#', '');
+      const element = document.getElementById(targetId);
+      
+      if (element) {
+        const headerOffset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+    }, 100);
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-neon-green/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,7 +58,8 @@ export default function Navbar() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="font-mono text-sm text-black hover:text-neon-green transition-colors duration-200"
+                  onClick={(e) => handleNavClick(e, item.href)}
+                  className="font-mono text-sm text-black hover:text-neon-green transition-colors duration-200 cursor-pointer"
                 >
                   {item.name}
                 </a>
@@ -68,15 +95,15 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-b border-neon-green/20"
+            className="md:hidden bg-white border-b border-neon-green/20 overflow-hidden"
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  onClick={() => setIsOpen(false)}
-                  className="text-gray-700 hover:text-neon-green block px-3 py-2 rounded-md text-base font-medium font-mono"
+                  onClick={(e) => handleNavClick(e, item.href)}
+                  className="text-black hover:text-neon-green hover:bg-gray-50 block px-3 py-4 rounded-md text-lg font-bold font-mono border-b border-gray-100 last:border-0 cursor-pointer"
                 >
                   {item.name}
                 </a>
@@ -85,7 +112,7 @@ export default function Navbar() {
                 href="https://t.me/Datboicoin_eth"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-black bg-neon-green block px-3 py-2 rounded-md text-base font-bold mt-4 text-center"
+                className="text-black bg-neon-green block px-3 py-4 rounded-md text-lg font-bold mt-4 text-center hover:bg-neon-green/80 transition-colors"
               >
                 JOIN COMMUNITY
               </a>
