@@ -77,7 +77,11 @@ export default function Hero() {
             {/* Placeholder for Dat Boi Image */}
             <div className="w-full h-full bg-white rounded-3xl border-4 border-black flex items-center justify-center overflow-hidden relative group shadow-[20px_20px_0px_0px_rgba(0,0,0,1)]">
                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-neon-green/40 via-transparent to-transparent opacity-50"></div>
-               <span className="text-9xl group-hover:scale-110 transition-transform duration-500 animate-custom-bounce">🐸🚲</span>
+               <img 
+                 src="https://i.ibb.co/SwcBcQ8d/PNG-01.png" 
+                 alt="Dat Boi" 
+                 className="w-full h-full object-contain p-8 group-hover:scale-110 transition-transform duration-500 animate-custom-bounce"
+               />
             </div>
             
             {/* Floating Elements */}
