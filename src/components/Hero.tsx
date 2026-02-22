@@ -30,9 +30,9 @@ export default function Hero() {
           <h2 className="text-lg md:text-2xl font-mono text-black font-bold mb-4 tracking-widest">
             O SHIT WADDUP!
           </h2>
-          <h1 className="text-4xl sm:text-5xl md:text-8xl lg:text-9xl font-display leading-none mb-6 text-white drop-shadow-[0_4px_0_rgba(0,0,0,1)] break-words">
+          <h1 className="text-4xl sm:text-5xl md:text-8xl lg:text-9xl font-display leading-none mb-6 text-black drop-shadow-[0_4px_0_rgba(255,255,255,1)] break-words">
             INTRODUCING <br />
-            <span className="text-black drop-shadow-none">
+            <span className="text-white drop-shadow-[0_4px_0_rgba(0,0,0,1)]">
               $DATBOI
             </span>
           </h1>

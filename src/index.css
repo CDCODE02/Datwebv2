@@ -6,7 +6,7 @@
   --font-mono: "JetBrains Mono", monospace;
   --font-sans: "Inter", sans-serif;
 
-  --color-neon-green: #CEE4C6;
+  --color-neon-green: #00FF00;
   --color-datboi-green: #CEE4C6;
   --color-neon-pink: #FF00FF;
   --color-dark-bg: #ffffff;
@@ -46,10 +46,10 @@
   }
   
   .glow-text {
-    text-shadow: 0 0 10px rgba(206, 228, 198, 0.8);
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
   }
   
   .glow-box {
-    box-shadow: 0 0 20px rgba(206, 228, 198, 0.5);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
   }
 }
