@@ -20,7 +20,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative">
                <div className="aspect-[4/5] bg-dark-bg rounded-2xl border border-white/10 p-8 flex items-center justify-center">
-                  <span className="text-9xl">👋</span>
+                  <span className="text-9xl animate-custom-bounce">👋</span>
                </div>
                <div className="absolute -bottom-6 -right-6 w-full h-full border-2 border-neon-green rounded-2xl -z-10" />
             </div>

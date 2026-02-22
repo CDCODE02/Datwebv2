@@ -1,20 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Anton", sans-serif;
+  --font-display: "Archivo Black", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
   --font-sans: "Inter", sans-serif;
 
   --color-neon-green: #00FF00;
+  --color-datboi-green: #00b100;
   --color-neon-pink: #FF00FF;
   --color-dark-bg: #0a0a0a;
   --color-card-bg: #111111;
+
+  --animate-custom-bounce: customBounce 1.5s infinite;
+
+  @keyframes customBounce {
+    30% { transform: scale(1.2); }
+    40%, 60% { transform: rotate(-20deg) scale(1.2); }
+    50% { transform: rotate(20deg) scale(1.2); }
+    70% { transform: rotate(0deg) scale(1.2); }
+    100% { transform: scale(1); }
+  }
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
   body {
-    @apply bg-dark-bg text-white font-sans overflow-x-hidden;
+    @apply bg-datboi-green text-white font-sans overflow-x-hidden;
   }
   
   h1, h2, h3, h4, h5, h6 {

@@ -3,13 +3,13 @@ import { PieChart, Wallet, Lock } from 'lucide-react';
 
 export default function Tokenomics() {
   return (
-    <section id="tokenomics" className="py-24 bg-dark-bg relative">
+    <section id="tokenomics" className="py-24 relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-7xl font-display text-white mb-4">
+          <h2 className="text-5xl md:text-7xl font-display text-black mb-4 drop-shadow-sm">
             TOKENOMICS
           </h2>
-          <p className="font-mono text-gray-400">The math behind the meme</p>
+          <p className="font-mono text-black/80 font-bold">The math behind the meme</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -39,14 +39,14 @@ export default function Tokenomics() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-card-bg border border-white/5 p-8 rounded-2xl hover:border-neon-green/50 transition-colors group"
+              className="bg-black border-4 border-white p-8 rounded-2xl shadow-[10px_10px_0px_0px_rgba(255,255,255,1)] hover:translate-y-1 hover:shadow-[5px_5px_0px_0px_rgba(255,255,255,1)] transition-all group"
             >
-              <div className="mb-6 bg-dark-bg w-20 h-20 rounded-full flex items-center justify-center border border-white/10 group-hover:scale-110 transition-transform">
+              <div className="mb-6 bg-white/10 w-20 h-20 rounded-full flex items-center justify-center border border-white/10 group-hover:scale-110 transition-transform">
                 {item.icon}
               </div>
-              <h3 className="text-gray-500 font-mono text-sm mb-2">{item.title}</h3>
+              <h3 className="text-neon-green font-mono text-sm mb-2 font-bold">{item.title}</h3>
               <p className="text-4xl font-display text-white mb-4">{item.value}</p>
-              <p className="text-gray-400 text-sm">{item.desc}</p>
+              <p className="text-gray-300 text-sm font-mono">{item.desc}</p>
             </motion.div>
           ))}
         </div>

@@ -20,7 +20,7 @@ export default function Roadmap() {
   ];
 
   return (
-    <section id="roadmap" className="py-24 bg-card-bg">
+    <section id="roadmap" className="py-24 bg-black text-white">
       <div className="container mx-auto px-4">
         <h2 className="text-5xl md:text-7xl font-display text-white text-center mb-20">
           DAT<span className="text-neon-green">MAP</span>
@@ -36,7 +36,7 @@ export default function Roadmap() {
               transition={{ delay: index * 0.2 }}
               className="relative"
             >
-              <div className="bg-dark-bg border border-white/10 p-8 rounded-2xl h-full hover:border-neon-green transition-colors">
+              <div className="bg-white/5 border border-white/10 p-8 rounded-2xl h-full hover:border-neon-green transition-colors">
                 <div className="text-6xl font-display text-white/5 absolute top-4 right-4">
                   {phase.id}
                 </div>

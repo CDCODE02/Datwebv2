@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Copy, Check } from 'lucide-react';
+import { Copy, Check, ShoppingCart } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Hero() {
@@ -15,9 +15,9 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-neon-green/20 rounded-full blur-[100px]" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-neon-pink/10 rounded-full blur-[100px]" />
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-white/20 rounded-full blur-[100px]" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-yellow-400/20 rounded-full blur-[100px]" />
       </div>
 
       <div className="container mx-auto px-4 z-10 grid lg:grid-cols-2 gap-12 items-center">
@@ -27,33 +27,34 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-center lg:text-left"
         >
-          <h2 className="text-xl md:text-2xl font-mono text-neon-green mb-4">
+          <h2 className="text-xl md:text-2xl font-mono text-black font-bold mb-4 tracking-widest">
             O SHIT WADDUP!
           </h2>
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-display leading-none mb-6">
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-display leading-none mb-6 text-white drop-shadow-[0_4px_0_rgba(0,0,0,1)]">
             INTRODUCING <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-emerald-400 glow-text">
+            <span className="text-black drop-shadow-none">
               $DATBOI
             </span>
           </h1>
           
-          <p className="text-gray-400 text-lg md:text-xl max-w-lg mx-auto lg:mx-0 mb-8 font-mono">
+          <p className="text-black/80 text-lg md:text-xl max-w-lg mx-auto lg:mx-0 mb-8 font-mono font-bold">
             The internet never forgets legends. It just waits for them to return.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-8">
-            <button className="bg-neon-green text-black font-display text-xl px-8 py-4 rounded-full hover:bg-white hover:scale-105 transition-all shadow-[0_0_20px_rgba(0,255,0,0.4)]">
+            <button className="group bg-black text-white font-display text-xl px-8 py-4 rounded-full hover:bg-white hover:text-black transition-all shadow-xl flex items-center gap-3">
               BUY $DATBOI
+              <ShoppingCart className="w-6 h-6 transition-colors" />
             </button>
-            <a href="https://dexscreener.com" target="_blank" rel="noreferrer" className="border border-white/20 text-white font-mono px-8 py-4 rounded-full hover:bg-white/10 transition-all">
+            <a href="https://dexscreener.com" target="_blank" rel="noreferrer" className="border-2 border-black text-black font-mono font-bold px-8 py-4 rounded-full hover:bg-black hover:text-white transition-all">
               VIEW CHART
             </a>
           </div>
 
-          <div className="bg-card-bg border border-white/10 p-4 rounded-xl max-w-md mx-auto lg:mx-0">
+          <div className="bg-black/90 backdrop-blur-sm border border-white/20 p-4 rounded-xl max-w-md mx-auto lg:mx-0 shadow-2xl">
             <div className="flex items-center justify-between gap-4">
-              <span className="font-mono text-gray-500 text-sm">CA:</span>
-              <code className="font-mono text-neon-green text-sm truncate flex-1">
+              <span className="font-mono text-neon-green text-sm">CA:</span>
+              <code className="font-mono text-white text-sm truncate flex-1">
                 {ca}
               </code>
               <button
@@ -74,16 +75,16 @@ export default function Hero() {
         >
           <div className="relative w-full aspect-square max-w-lg mx-auto">
             {/* Placeholder for Dat Boi Image */}
-            <div className="w-full h-full bg-gradient-to-br from-gray-800 to-black rounded-3xl border-2 border-neon-green/30 flex items-center justify-center overflow-hidden relative group">
-               <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-neon-green/20 via-transparent to-transparent opacity-50"></div>
-               <span className="text-9xl group-hover:scale-110 transition-transform duration-500">🐸🚲</span>
+            <div className="w-full h-full bg-black rounded-3xl border-4 border-black flex items-center justify-center overflow-hidden relative group shadow-[20px_20px_0px_0px_rgba(0,0,0,1)]">
+               <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-neon-green/40 via-transparent to-transparent opacity-50"></div>
+               <span className="text-9xl group-hover:scale-110 transition-transform duration-500 animate-custom-bounce">🐸🚲</span>
             </div>
             
             {/* Floating Elements */}
             <motion.div 
               animate={{ y: [0, -20, 0] }}
               transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-              className="absolute -top-10 -right-10 bg-neon-green text-black font-display text-xl p-4 rounded-lg rotate-12 shadow-lg"
+              className="absolute -top-10 -right-10 bg-white text-black font-display text-xl p-4 rounded-lg rotate-12 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] border-2 border-black"
             >
               HERE COME DAT BOI!
             </motion.div>
