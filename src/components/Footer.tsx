@@ -14,7 +14,7 @@ export default function Footer() {
           </h2>
 
           <div className="flex gap-6 mb-12">
-            <a href="https://x.com/Dat_boitoken" className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-neon-green hover:text-black transition-all border border-black/10">
+            <a href="https://x.com/datboimeme_erc" className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-neon-green hover:text-black transition-all border border-black/10">
               <Twitter size={24} className="text-black" />
             </a>
             <a href="https://t.me/Datboicoin_eth" className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-neon-green hover:text-black transition-all border border-black/10">
